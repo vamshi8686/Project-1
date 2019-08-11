@@ -14,5 +14,5 @@ jobs:
   - stage: release
     deploy:
       on:
-        repo: vamshi8686/vamshi
+        repo: vamshi8686/Project-1
         tags: true
