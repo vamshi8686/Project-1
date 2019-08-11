@@ -1,4 +1,4 @@
-desc: Test
+desc: Test_Jenk
 language: python
 python:
 - '2.7'
