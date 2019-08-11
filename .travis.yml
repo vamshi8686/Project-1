@@ -1,0 +1,18 @@
+desc: Test
+language: python
+python:
+- '2.7'
+- '3.5'
+- '3.6'
+- '3.7'
+env:
+- JENKINS_VERSION=stable
+- JENKINS_VERSION=latest
+jobs:
+  include:
+  - stage: test
+  - stage: release
+    deploy:
+      on:
+        repo: vamshi8686/vamshi
+        tags: true
